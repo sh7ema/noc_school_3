@@ -9,10 +9,15 @@ Step 1
 - download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install
 - install CentOS 7.9
     * choose English
+  
 ![img](img/choose_EN.png)
+
     * start Network
+
 ![img](img/network.png)
+
     * add password for root and another user
+
 ![img](img/pass.png)
 
 Step2
