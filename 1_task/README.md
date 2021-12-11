@@ -4,6 +4,9 @@
 4. Change permission on file
 5. Change owner on file
 
+6. в последнем скрине вы меняли владельца, а как поменять группу?
+7. какие надо задать права файлу что бы Владелец мог читать и писать, группа могла только читать, а остальные только запускать
+
 Step 1
 - download [CentOS 7.9](https://www.centos.org/download/)
 - download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install
