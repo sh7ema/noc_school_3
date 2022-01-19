@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PASSED=$1
+
+if [[ -d $PASSED ]]; then
+    echo "$PASSED is a directory"
+    exit 1
+elif [[ -f $PASSED ]]; then
+    echo "$PASSED is a file"
+    exit 0
+else
+    echo "$PASSED is not valid"
+    exit 2
+fi
