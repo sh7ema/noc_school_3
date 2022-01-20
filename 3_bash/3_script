@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Redirect output to nowhere
+cat /etc/shadow > /dev/null 2>&1
+
+if [[ $? == 0 ]]; then
+   echo "Command succeeded"
+else
+   echo "Command failed"
+fi
