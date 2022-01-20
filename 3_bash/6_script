@@ -1,0 +1,15 @@
+#!/bin/bash
+
+stop=$1
+counter=1
+
+while text= read -r line
+do
+  if [[ $stop == 0 ]]; then
+    exit
+  else
+    echo "$counter: $line"
+    counter=$((counter + 1))
+    stop=$((stop - 1))
+  fi
+done < /etc/passwd
