@@ -127,3 +127,5 @@ type of file, exit with a 2 exit status
 7. Rewrite 4_guessnum_case.sh so that:
 User has 3 guess attempts. Use any loop (for, while, until)
 User is prompted to start another round; any input except y/yes should stop script execution.
+
+![img](./img/num_find.png)

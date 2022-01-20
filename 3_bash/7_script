@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+echo -e "Hey $USER, nice to see you.
+what about a small guess-num game?
+I's simple: I think of a number from 0 to 9 -
+you try to guess it!"
+
+counter=0
+
+while [ $counter -le 2 ] 
+  do
+    read -p "Num, please! > " USERNUM
+    if [ $(echo "$USERNUM" | wc -m) -gt 2 -o \
+        -z "$(echo $USERNUM | grep -e [0-9])" ]; then
+    
+        echo "Nope, single digit from 0 to 9 only."
+    else
+        NUM="$(cat /dev/urandom | tr -dc "[0-9]" | fold -w1 | head -n1)"
+        if [ "$USERNUM" == "$NUM" ]; then
+            echo "That's right! Ya did it!"
+            exit
+        else
+            echo "Nope. Better luck next time!"
+            ((counter++))
+        fi
+    fi  
+  done
